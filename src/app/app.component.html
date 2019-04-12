@@ -1,4 +1,14 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<div *ngFor="let item of data; let i = index">
+	<div style="height: 30px; line-height: 30px; border: 1px solid black; padding: 10px;" (click)="topicMetadata[i].visibility = !topicMetadata[i].visibility"><span style="position: absolute; left: 30px;">{{item.topics[0].keyword}}</span> <span style="position: absolute; right: 30px;">{{item.weight}}</span>
+    <div style="z-index: -1; position: absolute; height: 30px; background-color: lightblue;" [style.width.%]="topicMetadata[i].percent - 8">
+    </div>
+  </div>
+  <div *ngIf="topicMetadata[i].visibility">
+    <div *ngFor="let topic of item.topics; let j = index" style="position: relative;">
+      <div style="height: 30px; line-height: 30px; margin: 0 20px; border: 1px solid gray; padding: 10px;"><span style="position: absolute; left: 40px;">{{topic.keyword}}</span> <span style="position: absolute; right: 40px;">{{topic.weight}}</span>
+        <div style="height: 30px; background-color: lightgreen;" [style.width.%]="topicMetadata[i].subTopicPercent[j] ">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

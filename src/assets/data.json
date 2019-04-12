@@ -1,0 +1,68 @@
+[
+  {
+    "topics": [
+      {
+        "keyword": "animal",
+        "weight": 53
+      },
+      {
+        "keyword": "cat",
+        "weight": 48
+      },
+      {
+        "keyword": "dog",
+        "weight": 42
+      },
+      {
+        "keyword": "elephant",
+        "weight": 35
+      },
+      {
+        "keyword": "tiger",
+        "weight": 30
+      },
+      {
+        "keyword": "zebra",
+        "weight": 26
+      },
+      {
+        "keyword": "fox",
+        "weight": 21
+      },
+      {
+        "keyword": "wolf",
+        "weight": 16
+      }
+    ],
+    "weight": 42
+  },
+  {
+    "topics": [
+      {
+        "keyword": "technology",
+        "weight": 64
+      },
+      {
+        "keyword": "mobile",
+        "weight": 46
+      },
+      {
+        "keyword": "computer",
+        "weight": 31
+      },
+      {
+        "keyword": "laptop",
+        "weight": 23
+      },
+      {
+        "keyword": "tv",
+        "weight": 16
+      },
+      {
+        "keyword": "tablet",
+        "weight": 7
+      }
+    ],
+    "weight": 12
+  }
+]
